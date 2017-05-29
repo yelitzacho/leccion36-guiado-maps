@@ -2,14 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div id="map"></div>
-    <button type="button" id="encuentrame">Encuentrame</button>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtZzmU5GYgBKrf0NQv85YXyUSZVIvivi0&callback=initMap">
-    </script>
+    <header class="container-fluid widthHundred">
+      <form class="row widthHundred navbar-form navbar-left" role=search>
+        <div class="widthHundred form-group">
+          <div class="col-md-4">
+            <span class="glyphicon glyphicon-record"></span>
+            <input type="text" id="punto-partida" class="input form-control" placeholder="Ingresa tu punto de partida">
+          </div>
+          <div class="col-md-4">
+            <span class="glyphicon glyphicon-send"></span>
+            <input type="text" id="punto-destino" class="input form-control" placeholder="Ingresa tu destino">
+          </div>
+          <div class="col-md-4">
+            <button type="button" id="trazar-ruta" class="btn btn-default navbar-btn">Trazar ruta</button>
+            <button type="button" id="encuentrame" class="btn btn-default navbar-btn">Encuéntrame</button>
+          </div>
+        </div>
+      </form>
+    </header>
+    <div id="map" class="widthHundred"></div>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/ap.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtZzmU5GYgBKrf0NQv85YXyUSZVIvivi0&callback=initMap&libraries=places">
+    </script>
   </body>
 </html>
+
+
+ div - container fluid 
+  navegador
+  precio
+  mapa
+
